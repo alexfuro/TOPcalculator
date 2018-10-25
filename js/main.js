@@ -12,7 +12,7 @@ function multiplication(a, b){
 
 function division(a, b){
   if (b == 0){
-    return "Error";
+    return 'Error';
   }else {
     return a / b;
   }
@@ -38,18 +38,18 @@ function operate(operand, a, b){
 let nums = [];
 let opers = [];
 let newLine = false;
-const btns = document.querySelectorAll("button");
-btns.forEach(btn => addEventListener("click", handleInput));
+const btns = document.querySelectorAll('button');
+btns.forEach(btn => addEventListener('click', handleInput));
 
 function updateDisplay(symbol, newLine = false){
-  let currentValue = document.getElementById("displayInput").innerHTML;
+  let currentValue = document.getElementById('displayInput').innerHTML;
   let digitCount = currentValue.split('');;
 
-  if(currentValue == "0" || newLine){
-    document.getElementById("displayInput").innerHTML = symbol;
+  if(currentValue == '0' || newLine){
+    document.getElementById('displayInput').innerHTML = symbol;
   }else{
     if(digitCount.length<9){
-      document.getElementById("displayInput").innerHTML += symbol;
+      document.getElementById('displayInput').innerHTML += symbol;
     }
   }
 }
@@ -59,10 +59,10 @@ function handleInput(e){
   const btnClass = e.target.className;
   const displayValue = document.getElementById('displayInput').innerHTML;
 
-  if(btnClass == "digit"){
+  if(btnClass == 'digit'){
     updateDisplay(btnSym, newLine);
     newLine = false;
-  }else if(btnClass == "operation"){
+  }else if(btnClass == 'operation'){
     nums.push(parseFloat(displayValue));
     opers.push(btnSym);
     newLine = true;
@@ -80,15 +80,15 @@ function handleInput(e){
         nums.push(result);
       }
     }
-  }else if(btnClass == "dot"){
+  }else if(btnClass == 'dot'){
     let dotPresent = decimalChecker(displayValue);
     if(!dotPresent){
       updateDisplay(btnSym);
     }
-  }else if(btnClass == "clear") {
+  }else if(btnClass == 'clear') {
     nums.length = 0;
     opers.length = 0;
-    document.getElementById('displayInput').innerHTML = "0";
+    document.getElementById('displayInput').innerHTML = '0';
   }
 }
 
@@ -106,5 +106,5 @@ function numRound(num){
   let decimals = strResult.match(reAfterDec);
   let exponential = strResult.substr(-4);
 
-  return (wholeNumbers + "." + decimals + exponential);
+  return (wholeNumbers + '.' + decimals + exponential);
 }
