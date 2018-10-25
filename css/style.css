@@ -5,7 +5,6 @@ body {
   min-width: 336px;
   min-height: 480px;
 }
-
 .container {
   border-radius: 3%;
   background-color: lightgrey;
@@ -16,7 +15,6 @@ body {
   margin-left: auto;
   border: 2px solid #212121;
 }
-
 button {
   padding: 4px;
   text-align: center;
@@ -26,13 +24,11 @@ button {
   border: none;
   box-shadow: 0 2px 2px 1px #212121;
 }
-button:hover{
+button:hover {
   background-color: #0277BD;
   box-shadow: 2px 3px 3px 2px #212121;
 }
-
-
-#displayInput{
+#displayInput {
   border-radius: 5px 5px 0% 0%;
   margin: 0;
   margin-bottom: 8px;
@@ -46,93 +42,87 @@ button:hover{
   overflow-x: auto;
   box-shadow: 0 1px 1px 0 #212121;
 }
-
 .btnGrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
 }
-
 .clear {
   background-color: #FFEB3B;
 }
-
-.operation{
+.operation {
   color: black;
   background-color: cornflowerblue;
 }
-
-#equal{
+#equal {
   color: white;
   background-color: red;
 }
-
-#equal:hover{
+#equal:hover {
   background-color: #D50000;
 }
-
-#d7{
+#d7 {
   grid-row-start: 2;
   grid-column-start: 1;
 }
-#d8{
+#d8 {
   grid-row-start: 2;
   grid-column-start: 2;
 }
-#d9{
+#d9 {
   grid-row-start: 2;
   grid-column-start: 3;
 }
-#division{
+#division {
   grid-row-start: 2;
   grid-column-start: 4;
 }
-#d4{
+#d4 {
   grid-row-start: 3;
   grid-column-start: 1;
 }
-#d5{
+#d5 {
   grid-row-start: 3;
   grid-column-start: 2;
 }
-#d6{
+#d6 {
   grid-row-start: 3;
   grid-column-start: 3;
 }
-#multiplication{
+#multiplication {
   grid-row-start: 3;
   grid-column-start: 4;
 }
-#d1{
+#d1 {
   grid-row-start: 4;
   grid-column-start: 1;
 }
-#d2{
+#d2 {
   grid-row-start: 4;
   grid-column-start: 2;
 }
-#d3{
+#d3 {
   grid-row-start: 4;
   grid-column-start: 3;
 }
-#subtraction{
+#subtraction {
   grid-row-start: 4;
   grid-column-start: 4;
 }
-#dot{
+#dot {
   grid-row-start: 5;
   grid-column-start: 1;
 }
-#d0{
+#d0 {
   grid-row-start: 5;
   grid-column-start: 2;
 }
-#equal{
+#equal {
   grid-row-start: 5;
   grid-column-start: 3;
 }
-#addition{
+#addition {
   grid-row-start: 5;
   grid-column-start: 4;
 }
@@ -140,7 +130,6 @@ button:hover{
   grid-row-start: 1;
   grid-column-start:4;
 }
-
 h1 {
   margin: 12px 0;
   padding:0;
@@ -148,8 +137,7 @@ h1 {
   color: white;
   font-size: 2em;
 }
-
-footer{
+footer {
   margin: 15px 0 0 0;
   text-align: center;
   color: white;
